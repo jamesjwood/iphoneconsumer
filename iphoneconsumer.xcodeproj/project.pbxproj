@@ -12,6 +12,12 @@
 		93A113151972CCE70003CFA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A113131972CCE70003CFA0 /* Main.storyboard */; };
 		93A113171972CCE70003CFA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A113161972CCE70003CFA0 /* Images.xcassets */; };
 		93A113231972CCE70003CFA0 /* iphoneconsumerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A113221972CCE70003CFA0 /* iphoneconsumerTests.swift */; };
+		93A1132D1972D38A0003CFA0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1132C1972D38A0003CFA0 /* MapKit.framework */; };
+		93A1132F1972D3900003CFA0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1132E1972D3900003CFA0 /* CoreLocation.framework */; };
+		93A113311972D3DA0003CFA0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A113301972D3DA0003CFA0 /* MapViewController.swift */; };
+		93A113331972D8F50003CFA0 /* MapViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A113321972D8F50003CFA0 /* MapViewAnnotation.swift */; };
+		93A113351972DDC70003CFA0 /* photo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 93A113341972DDC70003CFA0 /* photo.JPG */; };
+		93A113371972DFEF0003CFA0 /* ChooseSupplierTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A113361972DFEF0003CFA0 /* ChooseSupplierTypeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,12 @@
 		93A1131C1972CCE70003CFA0 /* iphoneconsumerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iphoneconsumerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A113211972CCE70003CFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A113221972CCE70003CFA0 /* iphoneconsumerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iphoneconsumerTests.swift; sourceTree = "<group>"; };
+		93A1132C1972D38A0003CFA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		93A1132E1972D3900003CFA0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		93A113301972D3DA0003CFA0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		93A113321972D8F50003CFA0 /* MapViewAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewAnnotation.swift; path = ../MapViewAnnotation.swift; sourceTree = "<group>"; };
+		93A113341972DDC70003CFA0 /* photo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo.JPG; path = "../../../../../Volumes/Macintosh HD 2/Dropbox/Personal/photo.JPG"; sourceTree = "<group>"; };
+		93A113361972DFEF0003CFA0 /* ChooseSupplierTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSupplierTypeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A1132F1972D3900003CFA0 /* CoreLocation.framework in Frameworks */,
+				93A1132D1972D38A0003CFA0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +71,8 @@
 		93A113011972CCE70003CFA0 = {
 			isa = PBXGroup;
 			children = (
+				93A1132E1972D3900003CFA0 /* CoreLocation.framework */,
+				93A1132C1972D38A0003CFA0 /* MapKit.framework */,
 				93A1130C1972CCE70003CFA0 /* iphoneconsumer */,
 				93A1131F1972CCE70003CFA0 /* iphoneconsumerTests */,
 				93A1130B1972CCE70003CFA0 /* Products */,
@@ -75,11 +91,15 @@
 		93A1130C1972CCE70003CFA0 /* iphoneconsumer */ = {
 			isa = PBXGroup;
 			children = (
+				93A113321972D8F50003CFA0 /* MapViewAnnotation.swift */,
 				93A1130F1972CCE70003CFA0 /* AppDelegate.swift */,
 				93A113111972CCE70003CFA0 /* ViewController.swift */,
 				93A113131972CCE70003CFA0 /* Main.storyboard */,
+				93A113341972DDC70003CFA0 /* photo.JPG */,
 				93A113161972CCE70003CFA0 /* Images.xcassets */,
 				93A1130D1972CCE70003CFA0 /* Supporting Files */,
+				93A113301972D3DA0003CFA0 /* MapViewController.swift */,
+				93A113361972DFEF0003CFA0 /* ChooseSupplierTypeViewController.swift */,
 			);
 			path = iphoneconsumer;
 			sourceTree = "<group>";
@@ -191,6 +211,7 @@
 			files = (
 				93A113151972CCE70003CFA0 /* Main.storyboard in Resources */,
 				93A113171972CCE70003CFA0 /* Images.xcassets in Resources */,
+				93A113351972DDC70003CFA0 /* photo.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A113121972CCE70003CFA0 /* ViewController.swift in Sources */,
+				93A113311972D3DA0003CFA0 /* MapViewController.swift in Sources */,
+				93A113331972D8F50003CFA0 /* MapViewAnnotation.swift in Sources */,
+				93A113371972DFEF0003CFA0 /* ChooseSupplierTypeViewController.swift in Sources */,
 				93A113101972CCE70003CFA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +349,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: James WOOD (362L7ZMYVA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James WOOD (362L7ZMYVA)";
 				INFOPLIST_FILE = iphoneconsumer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -336,9 +363,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: James WOOD (TQYB6VJLUN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James WOOD (TQYB6VJLUN)";
 				INFOPLIST_FILE = iphoneconsumer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0C336E14-BDB1-4745-923A-AE4A58083AC8";
 			};
 			name = Release;
 		};
